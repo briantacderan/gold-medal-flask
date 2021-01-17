@@ -213,7 +213,8 @@ h2#hidden.subheader:hover {
   }
 
   img.sort {
-    width: 12px;     
+    width: 12px;  
+    padding: 4px;
   }
 
   #container {
