@@ -175,18 +175,18 @@ h2#hidden.subheader:hover {
   }
     
   #country-search-button {
-    width: 100px;
-    height: 25px;
+    width: 80px;
+    height: 15px;
     border-radius: 54px;
     line-height: 1;
-    font-size: 10px; 
+    font-size: 5px; 
     margin: 15px;
   }
     
   .country-header th {
     background: #c8f1f5;
     padding-top: 18px;
-    font-size: 7px;
+    font-size: 5px;
   }
 
   img.sort {
@@ -204,8 +204,8 @@ h2#hidden.subheader:hover {
   }
     
   td.table-value {
-    font-size: 7px;
-    height: 19px;
+    font-size: 5px;
+    height: 8px;
     letter-spacing: 0.4px;
   }
 }
