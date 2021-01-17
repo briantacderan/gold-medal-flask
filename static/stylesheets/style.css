@@ -83,7 +83,7 @@ td, th {
 }
 
 th, .table-descriptor {
-  font-size:14px;
+  font-size: 14px;
 }
 
 td.table-value {
@@ -169,7 +169,7 @@ h2#hidden.subheader:hover {
   width:20%;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 500px) {
   #title-line {
     width: 90%;
   }
@@ -213,7 +213,7 @@ h2#hidden.subheader:hover {
   }
 
   img.sort {
-    width: 5px;     
+    width: 7px;     
   }
 
   #container {
@@ -227,13 +227,18 @@ h2#hidden.subheader:hover {
   }
     
   th, .table-descriptor {
-    font-size: 8px;
+    font-size: 12px;
+    max-width: 13px;
+    padding-left: 5px;
   }
     
+  td,
   td.table-value {
-    font-size: 12px;
+    font-size: 9.5px;
     height: 10px;
     letter-spacing: 0.4px;
+    max-width: 13px;
+    padding-left: 10px;
   }
 }
 
