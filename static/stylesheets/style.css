@@ -213,7 +213,7 @@ h2#hidden.subheader:hover {
   }
 
   img.sort {
-    width: 7px;     
+    width: 12px;     
   }
 
   #container {
@@ -239,6 +239,7 @@ h2#hidden.subheader:hover {
     letter-spacing: 0.4px;
     max-width: 13px;
     padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
