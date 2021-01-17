@@ -214,13 +214,13 @@ h2#hidden.subheader:hover {
 
   img.sort {
     width: 12px;  
-    margin: 8px;
+    margin: 11px;
   }
 
   #container {
     width: 95%;
     min-width: 100px;
-    font-size: 10px;
+    font-size: 11px;
   }
     
   tr {
@@ -228,14 +228,14 @@ h2#hidden.subheader:hover {
   }
     
   th, .table-descriptor {
-    font-size: 14px;
+    font-size: 12px;
     max-width: 8px;
     padding-left: 5px;
   }
     
   td,
   td.table-value {
-    font-size: 10px;
+    font-size: 11px;
     height: 10px;
     letter-spacing: 0.4px;
     max-width: 13px;
