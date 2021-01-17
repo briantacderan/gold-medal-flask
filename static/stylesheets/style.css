@@ -209,12 +209,12 @@ h2#hidden.subheader:hover {
   .country-header th {
     background: #c8f1f5;
     padding-top: 18px;
-    font-size: 10px;
+    font-size: 12px;
   }
 
   img.sort {
     width: 15px;  
-    margin: 10px;
+    margin: 8px 15px;
   }
 
   #container {
