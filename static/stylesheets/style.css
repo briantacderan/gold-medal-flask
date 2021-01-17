@@ -174,38 +174,65 @@ h2#hidden.subheader:hover {
     width: 90%;
   }
     
+  #country-search-input {
+    width: 150px;
+    height: 10px;
+    border-radius: 3px;
+    padding-left: 25px;
+    border: solid 1px #cecccf;
+    font-family: Work Sans;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.0;
+    letter-spacing: 0.4px;
+    padding-top: 10px;
+    text-align: left;
+    color: #4f4f4f;
+  }
+    
+  #magnifying-glass {
+    position: relative;
+    top: 0;
+    left: 20px;
+    width: 12px;
+  }
+    
   #country-search-button {
     width: 80px;
     height: 15px;
     border-radius: 54px;
     line-height: 1;
-    font-size: 5px; 
+    font-size: 8px; 
     margin: 15px;
   }
     
   .country-header th {
     background: #c8f1f5;
     padding-top: 18px;
-    font-size: 5px;
+    font-size: 8px;
   }
 
   img.sort {
-    width: 3px;     
+    width: 5px;     
   }
 
   #container {
     width: 95%;
-    min-width: 360px;
-    font-size: 10px;
+    min-width: 250px;
+    font-size: 8px;
   }
     
   tr {
     height: 50px;
   }
     
+  th, .table-descriptor {
+    font-size: 8px;
+  }
+    
   td.table-value {
-    font-size: 5px;
-    height: 8px;
+    font-size: 12px;
+    height: 10px;
     letter-spacing: 0.4px;
   }
 }
