@@ -95,7 +95,7 @@ td.table-value {
 }
 
 tr {
-  height: 50px;
+  height: 60px;
 }
 
 tr:nth-child(even) {
@@ -198,12 +198,12 @@ h2#hidden.subheader:hover {
   }
     
   #country-search-button {
-    width: 80px;
+    width: 100px;
     height: 25px;
-    border-radius: 54px;
+    border-radius: 7px;
     line-height: 1;
     font-size: 14px; 
-    font-weight: 700;
+    font-weight: 900;
     margin: 12px;
     color: black;
     background-color: gold;
@@ -211,9 +211,13 @@ h2#hidden.subheader:hover {
     
   .country-header th {
     background: #c8f1f5;
-    padding-top: 18px;
+    padding-top: 12px;
     font-size: 12px;
     vertical-align: bottom;
+  }
+    
+  td, th {
+    padding-top: 5px;
   }
 
   img.sort {
@@ -242,7 +246,7 @@ h2#hidden.subheader:hover {
     
   td,
   td.table-value {
-    font-size: 11px;
+    font-size: 12px;
     height: 10px;
     letter-spacing: 0.4px;
     max-width: 13px;
