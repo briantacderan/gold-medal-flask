@@ -223,7 +223,7 @@ h2#hidden.subheader:hover {
   }
 
   img.sort {
-    width: 20px;  
+    width: 20px;
     margin: 3px 20px;
   }
 
@@ -241,7 +241,8 @@ h2#hidden.subheader:hover {
   th, .table-descriptor {
     font-size: 11px;
     max-width: 8px;
-    padding: 10px 10px;
+    padding: 10px;
+    padding-top: 14px;
     margin: 0 auto;
   }
     
