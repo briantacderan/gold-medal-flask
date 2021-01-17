@@ -210,6 +210,7 @@ h2#hidden.subheader:hover {
     background: #c8f1f5;
     padding-top: 18px;
     font-size: 12px;
+    vertical-align: bottom;
   }
 
   img.sort {
