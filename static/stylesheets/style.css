@@ -15,7 +15,7 @@ body {
   border-bottom: solid 5px #ffffff;
   width: 700px;
   margin: 0 auto;
-  margin-bottom:40px;
+  margin-bottom: 40px;
 }
 
 #title {
@@ -171,11 +171,43 @@ h2#hidden.subheader:hover {
 
 @media (max-width: 750px) {
   #title-line {
-    width:90%;
+    width: 90%;
+  }
+    
+  #country-search-button {
+    width: 100px;
+    height: 25px;
+    border-radius: 54px;
+    line-height: 1;
+    font-size: 10px; 
+    margin: 15px;
+  }
+    
+  .country-header th {
+    background: #c8f1f5;
+    padding-top: 18px;
+    font-size: 10px;
+  }
+
+  img.sort {
+    width: 5px;     
   }
 
   #container {
     width: 95%;
+    min-width: 360px;
+    font-size: 10px;
+  }
+    
+  tr {
+    height: 50px;
+  }
+    
+  td.table-value {
+    font-size: 10px;
+    height: 19px;
+    letter-spacing: 0.4px;
+    max-width: 20px;
   }
 }
 

@@ -23,7 +23,7 @@ for i in range(len(country_table)):
     post_array = Country(name=row_array[0], 
                          code=row_array[1],
                          population=row_array[2],
-                         gdp=row_array[3],
+                         gdp='${0:,.2f}'.format(row_array[3]),
                          medals=0)
     db.session.add(post_array)
     try:
