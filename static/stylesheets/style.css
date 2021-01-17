@@ -186,11 +186,11 @@ h2#hidden.subheader:hover {
   .country-header th {
     background: #c8f1f5;
     padding-top: 18px;
-    font-size: 10px;
+    font-size: 7px;
   }
 
   img.sort {
-    width: 5px;     
+    width: 3px;     
   }
 
   #container {
@@ -204,10 +204,9 @@ h2#hidden.subheader:hover {
   }
     
   td.table-value {
-    font-size: 10px;
+    font-size: 7px;
     height: 19px;
     letter-spacing: 0.4px;
-    max-width: 20px;
   }
 }
 
