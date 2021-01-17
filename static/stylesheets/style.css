@@ -198,15 +198,16 @@ h2#hidden.subheader:hover {
   }
     
   #country-search-button {
-    width: 100px;
+    width: 120px;
     height: 32px;
     border-radius: 2px;
     line-height: 1;
-    font-size: 1px; 
+    font-size: 15px; 
     font-weight: 900;
     margin: 12px;
     color: black;
     background-color: gold;
+    padding-bottom: 5px;
   }
     
   .country-header th {
@@ -217,7 +218,7 @@ h2#hidden.subheader:hover {
   }
     
   td, th {
-    padding-top: 5px;
+    padding-top: 0;
   }
 
   img.sort {
