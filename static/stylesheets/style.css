@@ -199,10 +199,10 @@ h2#hidden.subheader:hover {
     
   #country-search-button {
     width: 100px;
-    height: 25px;
-    border-radius: 7px;
+    height: 32px;
+    border-radius: 2px;
     line-height: 1;
-    font-size: 14px; 
+    font-size: 1px; 
     font-weight: 900;
     margin: 12px;
     color: black;
@@ -222,7 +222,7 @@ h2#hidden.subheader:hover {
 
   img.sort {
     width: 20px;  
-    margin: 8px 20px;
+    margin: 3px 20px;
   }
 
   #container {
@@ -233,7 +233,7 @@ h2#hidden.subheader:hover {
   }
     
   tr {
-    height: 50px;
+    height: 65px;
   }
     
   th, .table-descriptor {
