@@ -175,8 +175,8 @@ h2#hidden.subheader:hover {
   }
     
   #country-search-input {
-    width: 2000px;
-    height: 14px;
+    width: 240px;
+    height: 18px;
     border-radius: 3px;
     padding-left: 25px;
     border: solid 1px #cecccf;
