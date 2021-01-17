@@ -239,11 +239,10 @@ h2#hidden.subheader:hover {
   }
     
   th, .table-descriptor {
-    font-size: 13px;
+    font-size: 11px;
     max-width: 8px;
-    padding: 5px;
-    padding-top:7px;
-    
+    padding: 10px 0;
+    margin: 0 auto;
   }
     
   td,
