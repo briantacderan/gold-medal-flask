@@ -202,7 +202,7 @@ h2#hidden.subheader:hover {
     height: 32px;
     border-radius: 4px;
     line-height: 1;
-    font-size: 18px; 
+    font-size: 18px;
     font-weight: 900;
     margin: 12px;
     color: black;
@@ -241,7 +241,7 @@ h2#hidden.subheader:hover {
   th, .table-descriptor {
     font-size: 11px;
     max-width: 8px;
-    padding: 10px 0;
+    padding: 10px 10px;
     margin: 0 auto;
   }
     
