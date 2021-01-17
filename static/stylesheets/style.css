@@ -213,7 +213,7 @@ h2#hidden.subheader:hover {
   .country-header th {
     background: #c8f1f5;
     padding-top: 7px;
-    font-size: 13px;
+    font-size: 11px;
     vertical-align: bottom;
     text-align: center;
   }
@@ -247,10 +247,10 @@ h2#hidden.subheader:hover {
     
   td,
   td.table-value {
-    font-size: 11px;
+    font-size: 12px;
     height: 10px;
-    letter-spacing: 0.4px;
-    max-width: 13px;
+    letter-spacing: 0.3px;
+    max-width: 12px;
     padding-left: 10px;
     padding-right: 10px;
     vertical-align: middle;
