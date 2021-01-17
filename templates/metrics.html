@@ -1,0 +1,141 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div>
+  <h2 id="head" class="subheader">{{ country.name.upper() }}</h2>
+  <table id="country-detail-table">
+    <tbody>
+      <tr>
+        <td class="table-descriptor">GROSS DOMESTIC PRODUCT</td>
+        <td class="table-descriptor"># OF GOLD MEDALS</td>
+        <td class="table-descriptor">POPULATION</td>
+      </tr>
+      <tr>
+        <td class="table-value">{{ country.gdp }}</td>
+        <td class="table-value">{{ country.medals }}</td>
+        <td class="table-value">{{ country.population }}</td>
+      </tr>
+      <tr>
+        <td class="table-descriptor">MOST WINS AT A SUMMER EVENT</td>
+        <td class="table-descriptor">BEST OLYMPIC YEAR</td>
+        <td class="table-descriptor">MOST WINS AT A WINTER EVENT</td>
+      </tr>
+      <tr>
+        <td class="table-value">{{ results.best_season(country.name, 'Summer') }}</td>
+        <td class="table-value">{{ results.best_category(country.name, 'year') }}</td>
+        <td class="table-value">{{ results.best_season(country.name, 'Winter') }}</td>
+      </tr>
+      <tr>
+        <td class="table-descriptor">NUMBER OF MALE MEDALISTS</td> 
+        <td class="table-descriptor">MOST MEDALS BY A SINGLE ATHLETE</td>
+        <td class="table-descriptor">NUMBER OF FEMALE MEDALISTS</td>
+      </tr>
+      <tr>
+        <td class="table-value">{{ results.gender_metrics(country.name, 'Men') }}</td>
+        <td class="table-value">{{ results.best_athlete(country.name) }}</td>
+        <td class="table-value">{{ results.gender_metrics(country.name, 'Women') }}</td>
+      </tr>
+      <tr>
+        <td class="table-descriptor">MOST MEDALED SPORT</td>
+        <td class="table-descriptor">MOST MEDALED DISCIPLINE</td> 
+        <td class="table-descriptor">MOST MEDALED EVENT</td> 
+      </tr>
+      <tr>
+        <td class="table-value">{{ results.best_category(country.name, 'sport') }}</td>
+        <td class="table-value">{{ results.best_category(country.name, 'discipline') }}</td>
+        <td class="table-value">{{ results.best_category(country.name, 'event') }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div>
+  <h2 id="active" class="subheader">GOLD MEDAL LIST</h2>
+  <a href="{{ url_for('sports', new_country=country.name) }}">
+    <h2 id="hidden" class="subheader">click to view: SPORTS LIST</h2>
+  </a>
+  <table class="gold-medal-table">
+    <tbody>
+      <tr class="table-header country-header">
+        <th>
+          YEAR WON
+          <a href="{{ url_for('metrics', new_country=country.name, field='year', sort='asc') }}">
+            <img class="sort" 
+                 alt="Sort Ascending" 
+                 src="{{ url_for('static', filename='resources/images/up.svg') }}" />
+          </a>
+          <a href="{{ url_for('metrics', new_country=country.name, field='year', sort='desc') }}">
+            <img class="sort" 
+                 alt="Sort Descending" 
+                 src="{{ url_for('static', filename='resources/images/down.svg') }}" />
+          </a>
+        </th>
+        <th>
+          SEASON
+          <a href="{{ url_for('metrics', new_country=country.name, field='season', sort='asc') }}">
+            <img class="sort" 
+                 alt="Sort Ascending" 
+                 src="{{ url_for('static', filename='resources/images/up.svg') }}" />
+          </a>
+          <a href="{{ url_for('metrics', new_country=country.name, field='season', sort='desc') }}">
+            <img class="sort" 
+                 alt="Sort Descending" 
+                 src="{{ url_for('static', filename='resources/images/down.svg') }}" />
+          </a>
+        </th>
+        <th>
+          CITY
+          <a href="{{ url_for('metrics', new_country=country.name, field='city', sort='asc') }}">
+            <img class="sort" 
+                 alt="Sort Ascending" 
+                 src="{{ url_for('static', filename='resources/images/up.svg') }}" />
+          </a>
+          <a href="{{ url_for('metrics', new_country=country.name, field='city', sort='desc') }}">
+            <img class="sort" 
+                 alt="Sort Descending" 
+                 src="{{ url_for('static', filename='resources/images/down.svg') }}" />
+          </a>
+        </th>
+        <th>
+          MEDAL WINNER NAME
+          <a href="{{ url_for('metrics', new_country=country.name, field='name', sort='asc') }}">
+            <img class="sort" 
+                 alt="Sort Ascending" 
+                 src="{{ url_for('static', filename='resources/images/up.svg') }}" />
+          </a>
+          <a href="{{ url_for('metrics', new_country=country.name, field='name', sort='desc') }}">
+            <img class="sort" 
+                 alt="Sort Descending" 
+                 src="{{ url_for('static', filename='resources/images/down.svg') }}" />
+          </a>
+        </th>
+        <th>
+          EVENT
+          <a href="{{ url_for('metrics', new_country=country.name, field='event', sort='asc') }}">
+            <img class="sort" 
+                 alt="Sort Ascending" 
+                 src="{{ url_for('static', filename='resources/images/up.svg') }}" />
+          </a>
+          <a href="{{ url_for('metrics', new_country=country.name, field='event', sort='desc') }}">
+            <img class="sort" 
+                 alt="Sort Descending" 
+                 src="{{ url_for('static', filename='resources/images/down.svg') }}" />
+          </a>
+        </th>
+      </tr>
+        
+      {% for gold in golds %}  
+      <tr key="{{ gold.id }}">
+        <td>{{ gold.year }}</td>
+        <td>{{ gold.season }}</td>
+        <td>{{ gold.city }}</td>
+        <td>{{ gold.name }}</td>
+        <td>{{ gold.event }}</td>
+      </tr>
+      {% endfor %}  
+        
+    </tbody>
+  </table>
+</div>
+
+{% endblock %}

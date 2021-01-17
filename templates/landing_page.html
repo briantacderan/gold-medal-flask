@@ -1,0 +1,96 @@
+{% extends "base.html" %}
+{% block content %}
+
+<table class="country-table">
+
+  <tbody>
+    <tr class="table-header country-header">
+      <th>
+        COUNTRY
+        <a href="{{ url_for('index', field='country', sort='asc') }}">
+          <img class="sort" 
+               alt="Sort Ascending" 
+               src="{{ url_for('static', filename='resources/images/up.svg') }}" />
+        </a>
+        <a href="{{ url_for('index', field='country', sort='desc') }}">
+          <img class="sort" 
+               alt="Sort Descending" 
+               src="{{ url_for('static', filename='resources/images/down.svg') }}" />
+        </a>
+      </th>
+      <th>
+        GDP
+        <a href="{{ url_for('index', field='gdp', sort='asc') }}">
+          <img class="sort" 
+               alt="Sort Ascending" 
+               src="{{ url_for('static', filename='resources/images/up.svg') }}" />
+        </a>
+        <a href="{{ url_for('index', field='gdp', sort='desc') }}">
+          <img class="sort" 
+               alt="Sort Descending" 
+               src="{{ url_for('static', filename='resources/images/down.svg') }}" />
+        </a>
+      </th>
+      <th>
+        POPULATION
+        <a href="{{ url_for('index', field='population', sort='asc') }}">
+          <img class="sort" 
+               alt="Sort Ascending" 
+               src="{{ url_for('static', filename='resources/images/up.svg') }}" />
+        </a>
+        <a href="{{ url_for('index', field='population', sort='desc') }}">
+          <img class="sort" 
+               alt="Sort Descending" 
+               src="{{ url_for('static', filename='resources/images/down.svg') }}" />
+        </a>
+      </th>
+      <th>
+        # OF GOLD MEDALS
+        <a href="{{ url_for('index', field='medals', sort='asc') }}">
+          <img class="sort" 
+               alt="Sort Ascending" 
+               src="{{ url_for('static', filename='resources/images/up.svg') }}" />
+        </a>
+        <a href="{{ url_for('index', field='medals', sort='desc') }}">
+          <img class="sort" 
+               alt="Sort Descending" 
+               src="{{ url_for('static', filename='resources/images/down.svg') }}" />
+        </a>
+      </th>
+    </tr>
+      
+    {% if country %}
+      
+    <tr>
+      <td>{{ country.name }}</td>
+      <td>{{ country.gdp }}</td>
+      <td>{{ country.population }}</td>
+      <td>{{ country.medals }}</td>
+    </tr>
+      
+    {% else %}
+
+    {% for country in countries %}
+    <tr key="{{ country.id }}">
+      {% if country.medals != 0 %}
+      <td class="country-link">
+        <a href="{{ url_for('metrics', new_country=country.name) }}">
+          {{ country.name }}
+        </a>
+      </td>
+      {% else %}
+      <td>{{ country.name }}</td>
+      {% endif %}
+      <td>{{ country.gdp }}</td>
+      <td>{{ country.population }}</td>
+      <td>{{ country.medals }}</td>
+    </tr>
+    {% endfor %}
+      
+    {% endif %}
+
+  </tbody>
+
+</table>
+
+{% endblock %}

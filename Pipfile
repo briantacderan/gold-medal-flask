@@ -1,0 +1,21 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+pandas = "*"
+matplotlib = "*"
+flask = "*"
+flask-sqlalchemy = "*"
+datetime = "*"
+werkzeug = "*"
+flask-wtf = "*"
+wtforms = "*"
+gunicorn = "*"
+flask-table = "*"
+
+[requires]
+python_version = "3.8"
