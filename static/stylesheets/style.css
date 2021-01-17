@@ -212,7 +212,7 @@ h2#hidden.subheader:hover {
     
   .country-header th {
     background: #c8f1f5;
-    padding: 12px 5px 4px 5px;
+    padding-top: 7px;
     font-size: 12px;
     vertical-align: bottom;
   }
