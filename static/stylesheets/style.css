@@ -217,7 +217,7 @@ h2#hidden.subheader:hover {
   }
 
   img.sort {
-    width: 15px;  
+    width: 20px;  
     margin: 8px 20px;
   }
 
@@ -248,6 +248,7 @@ h2#hidden.subheader:hover {
     max-width: 13px;
     padding-left: 10px;
     padding-right: 10px;
+    vertical-align: middle;
   }
 }
 
