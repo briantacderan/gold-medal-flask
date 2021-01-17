@@ -175,8 +175,8 @@ h2#hidden.subheader:hover {
   }
     
   #country-search-input {
-    width: 150px;
-    height: 10px;
+    width: 2000px;
+    height: 14px;
     border-radius: 3px;
     padding-left: 25px;
     border: solid 1px #cecccf;
@@ -200,19 +200,19 @@ h2#hidden.subheader:hover {
   #country-search-button {
     width: 120px;
     height: 32px;
-    border-radius: 2px;
+    border-radius: 4px;
     line-height: 1;
-    font-size: 15px; 
+    font-size: 16px; 
     font-weight: 900;
     margin: 12px;
     color: black;
     background-color: gold;
-    padding-bottom: 5px;
+    padding-bottom: 0;
   }
     
   .country-header th {
     background: #c8f1f5;
-    padding-top: 12px;
+    padding: 12px 5px 4px 5px;
     font-size: 12px;
     vertical-align: bottom;
   }
